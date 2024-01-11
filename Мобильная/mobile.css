@@ -1,0 +1,374 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+      display: block;
+}
+body {
+      line-height: 1;
+}
+ol, ul {
+      list-style: none;
+}
+blockquote, q {
+      quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+      content: '';
+      content: none;
+}
+table {
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+.fon {
+      background-color: #FEF5E7;
+      width: 100%;
+}
+.fon_cont{
+      max-width: 320px;
+      
+
+      margin: 0 auto; 
+}
+.header {
+      background-color: #6BBE46;
+      height: 18px;
+      width: 100%;
+      text-align: center;
+      color: white;
+
+
+}
+.header p {
+      padding-top: 5px;
+      font-family: Montserrat Alternates, sans-serif;
+      font-weight: bold;
+      font-size: 8px;
+
+}
+.hed {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      gap: 4px;
+      left: 22px;
+      top: 3px;
+
+}
+
+.logo img {
+      position: relative;
+      width: 35px;
+      height: 50px;
+      right: 37px;
+      /*top: 65px;*/
+}
+
+.name {
+      position: relative;
+      /*margin-top: 65px;*/
+      right: 30px;
+
+}
+.name_1 {
+      font-family: Montserrat Alternates, sans-serif;
+      font-size: 9px;
+      position: relative;
+      top: 22px;
+
+}
+.name_2 {
+      font-family: Montserrat Alternates, sans-serif;
+      margin-top: 30px;
+      font-size: 6px;
+      color: #850c4d;
+}
+.number {
+      position: relative;
+      margin-left: 6px;
+      
+      
+      font-size: 8px;
+      font-family: Montserrat Alternates, sans-serif;
+}
+.cc {
+      position: relative;
+      margin-top: 19px;
+      right: 18px;
+}
+.aa {
+      display: flex;
+      position: relative;
+      top: 4px;
+      
+
+}
+.bb {
+      display: flex;
+      position: relative;
+      margin-top: 13px;
+}
+.email {
+      position: relative;
+      font-family: Montserrat Alternates, sans-serif;
+      left: 6px;
+      
+      font-size: 8px;
+}
+
+.btn {
+      background-color: #4CAF50;
+      font-family: Montserrat Alternates, sans-serif;
+      height: 29px;
+      width: 72px;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 9px;
+      /*padding: 10px 20px;*/
+      border-radius: 10px; /* Закругление углов */
+      
+}
+button {
+      position: relative;
+      text-align: center;
+      margin-top: 20px;
+      right: 6px;
+}
+nav {
+      font-family: Montserrat Alternates, sans-serif;
+      width: 100%;
+      background-color: #6BBE46; /* Зеленый цвет фона */
+      height: 37px; /* Высота фона меню */
+      display: flex; /* Установка элементов меню в ряд */
+      justify-content: center; /* Центрирование элементов по горизонтали */
+      align-items: center; /* Центрирование элементов по вертикали */
+      margin-top: 5px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav li {
+      display: inline;
+      margin:0 15px;
+}
+nav a {
+    text-decoration: none;
+    font-family: Montserrat Alternates, sans-serif;
+    color: black;
+    font-weight: 550;
+    font-size: 10px;
+}
+/* Скрытие выпадающего меню */
+.dropdown {
+      display: none;
+}
+ 
+/* Позиционирование выпадающего меню */
+nav li:hover .dropdown {
+      display: block;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+}
+ 
+/* Стилизация элементов выпадающего меню */
+.dropdown li {
+      display: block;
+      margin-bottom: 5px;
+}
+
+.slid {
+      margin-top: 5px;
+}
+.prod {
+      text-align: center;
+      font-family: Montserrat Alternates, sans-serif;
+      color: black;
+      font-weight: bold;
+      font-size: 10px;
+      margin-top: 12px;
+}
+
+
+.flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+.container {
+      
+      border-radius: 16px;
+      background-color: #F8FFCA;
+      /*padding: 20px*/;
+      text-align: center;
+      width: 130px;
+      height: 105px;
+      
+      border-top: none;
+      border-bottom: 1.5px solid #000;
+      margin-bottom: 20px;
+      margin: 7px;
+}
+.flex-container img {
+      position: relative;
+      top: 3px;
+      max-width: 100%;
+      border-radius: 13px 13px 6px 6px;
+}
+
+.flex-container p {
+      position: relative;
+      top: 6px;
+      font-family: Montserrat Alternates, sans-serif;
+      font-weight: bold;
+      font-size: 9px;
+}
+.frame {
+    width: 93%;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F8FFCA;
+    position: relative;
+    /*display: flex;*/
+    
+    
+}
+
+.frame p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: Montserrat Alternates, sans-serif;
+}
+
+.frame img {
+
+      position: relative;
+      left: 8px;
+      
+      margin-right: 15px;
+      height: 100%;
+
+}
+
+.popylar {
+      font-family: Montserrat Alternates, sans-serif;;
+      margin-top: 10px;
+      padding: 5px;
+      font-size: 9px;
+      font-weight: bold;
+      color: black;
+
+    
+}
+
+.container__2 {
+      display: flex;
+      justify-content: center;
+      background-color: #6BBE46;
+      padding: 10px;
+      margin-top: 18px;
+}
+.company {
+      
+      position: relative;
+      font-family: Montserrat Alternates, sans-serif;
+      
+      font-size: 7px;
+      position: relative;
+      top: 2px;
+      
+}
+.log {
+      position: relative;
+      display: block; /* Чтобы можно было задать ширину и высоту для изображения */
+      margin: 0 auto; /* Чтобы изображение было по центру */
+      
+}
+.contact {
+    position: relative;
+    right: 7px;
+}
+.inf1 {
+      font-size: 8px;
+}
+.inf2 {
+      font-size: 8px;
+      position: relative;
+      top: 3px;
+}
+
+.marketplays {
+      position: relative;
+      right: 4px;
+      
+}
+.news {
+      position: relative;
+}
+.bold {
+      font-size: 10px;
+      font-weight: bold;
+}
+.container__2 p {
+      font-family: Montserrat Alternates, sans-serif;
+}
+.icon_contact {
+      position: relative;
+      top: 10px;
+      
+}
+.icon_marketplays {
+      position: relative;
+      left: 6px;
+      top: 11px;
+      
+      
+}
+.social_network {
+      position: relative;
+      top: 11px;
+      
+      
+}
+.news p {
+      position: relative;
+      left: 7px;
+}
+.image-container {
+      text-align: center;
+      position: relative;
+      right: 12px;
+}
+
+

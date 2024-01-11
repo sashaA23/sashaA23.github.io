@@ -1,0 +1,468 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+      display: block;
+}
+body {
+      line-height: 1;
+      background-color: #FEF5E7;
+}
+ol, ul {
+      list-style: none;
+}
+blockquote, q {
+      quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+      content: '';
+      content: none;
+}
+table {
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+}
+
+input {
+      font-family: Montserrat Alternates, sans-serif;
+      color: #000;
+      font-size: 18px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #000;
+      outline: none;
+      padding: 10px;
+}
+
+input::placeholder {
+      font-family: Montserrat Alternates, sans-serif;
+      color: #000;
+}
+
+.fon {
+      width: 100%;
+}
+.fon_cont{
+      max-width: 1310px;
+      padding: 0px 15px;
+
+      margin: 0 auto; 
+}
+.header {
+      background-color: #6BBE46;
+      height: 25px;
+      width: 100%;
+      text-align: center;
+      color: white;
+
+
+}
+.header p {
+      padding-top: 5px;
+      font-family: Montserrat Alternates, sans-serif;
+      font-weight: bold;
+}
+.hed {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      gap: 40px;
+      color: #000;
+      padding-top: 10px;
+}
+
+.logo img {
+      position: relative;
+      width: 120px;
+      height: 150px;
+      right: 66px;
+}
+
+.name {
+      position: relative;
+      margin-top: 55px;
+      right: 55px;
+
+}
+.name_1 {
+      font-family: Montserrat Alternates, sans-serif;
+      font-size: 24px;
+      font-weight: 400 !important;
+      width: 150px;
+
+}
+.name_2 {
+      font-family: Montserrat Alternates, sans-serif;
+      margin-top: 30px;
+      font-weight: 400 !important;
+
+}
+.number {
+      position: relative;
+      margin-left: 8px;
+      margin-top: 3px;
+      font-weight: 400 !important;
+      
+      font-family: Montserrat Alternates, sans-serif;
+}
+.cc {
+      position: relative;
+      margin-top: 80px;
+      right: 23px;
+}
+.aa {
+      display: flex;
+      position: relative;
+      margin-top: -5px;
+
+}
+.bb {
+      display: flex;
+      position: relative;
+      margin-top: 13px;
+}
+.email {
+      position: relative;
+      font-family: Montserrat Alternates, sans-serif;
+      left: 8px;
+      margin-top: 3px;
+      font-weight: 400 !important;
+}
+
+.btn {
+      cursor: pointer;
+      background-color: #4CAF50;
+      font-family: Montserrat Alternates, sans-serif;
+      height: 40px;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 10px; /* Закругление углов */
+}
+
+.popup {
+      position: fixed;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+      width: 700px;
+      padding: 15px 30px 30px 30px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      transition: all .5s;
+      background-color: #FEF5E7;
+      visibility: hidden;
+}
+
+.popup-close {
+      display: block;
+      width: 100%;
+      text-align: right;
+      margin-bottom: 5px;
+      margin-top: 0;
+}
+
+.popup-close-img {
+      width: 25px;
+      height: 25px;
+}
+
+.popup-title {
+      margin-bottom: 25px;
+      line-height: normal;
+      font-size: 24px;
+      text-align: center;
+}
+
+.inputs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 20px;
+      margin-bottom: 40px;
+}
+
+.popup-input-name,
+.popup-input-phone,
+.popup-input-email {
+      max-width: 200px;
+}
+
+button {
+      position: relative;
+      margin-top: 90px;
+      left: 22px;
+}
+
+.popup-btn {
+      display: block;
+      font-size: 20px;
+      border: 1px solid #000;
+      background-color: #fff;
+      padding: 15px 0;
+      width: 300px;
+      margin: 0 auto;
+}
+
+nav {
+      position: relative;
+      font-family: Montserrat Alternates, sans-serif;
+      width: 100%;
+      background-color: #6BBE46; /* Зеленый цвет фона */
+      height: 60px; /* Высота фона меню */
+      display: flex; /* Установка элементов меню в ряд */
+      justify-content: center; /* Центрирование элементов по горизонтали */
+      align-items: center; /* Центрирование элементов по вертикали */
+      margin-top: 5px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav li {
+      display: inline;
+      margin:0 88px;
+}
+nav a {
+    text-decoration: none;
+    font-family: Montserrat Alternates, sans-serif;
+    color: #333;
+    font-weight: 550;
+    font-size: 19px;
+}
+
+
+
+
+
+.card_flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+.card_product {
+      border-radius: 20px;
+      background-color: #F8FFCA;
+      text-align: center;
+      width: 260px;
+      height: 508px;
+      border-top: none;
+      border: 2px solid #000;
+      margin-bottom: 20px;
+      margin: 15px;
+}
+.card_flex img {
+      position: relative;
+      top: 5px;
+      max-width: 100%;
+      border-radius: 15px;
+}
+.name_product {
+      position: relative;
+      top: 14px;
+      left: 8px;
+      font-family: Montserrat Alternates, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: #222;
+}
+.inform1 {
+      position: relative;
+      top: 14px;
+      left: 8px;
+      font-family: Montserrat Alternates, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: red;  
+}
+.space {
+      display: flex;
+      justify-content: space-between;
+      width: 240px;
+      margin: 4px;
+}
+.inform2 {
+      position: relative;
+      top: 19px;
+      left: 5px;
+      font-family: Montserrat Alternates, sans-serif;
+      font-size: 15px;
+      color: #222;  
+}
+.price {
+      position: relative;
+      top: 13px;
+}
+.buy {
+      background-color: #4CAF50;
+      cursor: pointer;
+      font-family: Montserrat Alternates, sans-serif;
+      height: 40px;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;
+      padding: 10px 35px;
+      border-radius: 10px; /* Закругление углов */
+      position: relative;
+      top: 45px;
+}
+
+.popup {
+      position: fixed;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+      width: 700px;
+      padding: 15px 30px 30px 30px;
+      top: 50%;
+      left: 50%;
+      transition: 0.5s;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      transition: all .5s;
+      background-color: #FEF5E7;
+      visibility: hidden;
+}
+
+.popup-close {
+      display: block;
+      width: 100%;
+      text-align: right;
+      margin-bottom: 5px;
+      margin-top: 0;
+}
+
+.popup-close-img {
+      width: 25px;
+      height: 25px;
+}
+
+.popup-title {
+      margin-bottom: 25px;
+      line-height: normal;
+      font-size: 24px;
+      text-align: center;
+}
+
+.inputs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 20px;
+      margin-bottom: 40px;
+}
+
+.popup-input-name,
+.popup-input-phone,
+.popup-input-email {
+      max-width: 200px;
+}
+.popup-btn {
+      display: block;
+      font-size: 20px;
+      border: 1px solid #000;
+      background-color: #fff;
+      padding: 15px 0;
+      width: 300px;
+      margin: 0 auto;
+}
+button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+}
+
+input {
+      font-family: Montserrat Alternates, sans-serif;
+      color: #000;
+      font-size: 18px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #000;
+      outline: none;
+      padding: 10px;
+}
+
+input::placeholder {
+      font-family: Montserrat Alternates, sans-serif;
+      color: #000;
+}
+
+.active {
+      visibility: visible;
+}
+.dropdown {
+      position: absolute;
+      top: 40px;
+      left: -50px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px 0;
+      background-color: #fff;
+      width: 200px;
+      padding: 20px 0;
+      z-index: 5;
+}
+
+.dropdown__item-link {
+      font-size: 24px;
+      color: #000;
+      text-decoration: none;
+}
+
+.dropdown__item {
+      transition: all .3s;
+}
+
+.dropdown__item:hover {
+      scale: 1.05;
+}
+.dropdown__wrapper {
+      position: relative;
+}
+
+.products-btn {
+      cursor: pointer;
+}
+
+.scale {
+      display: inline-block;
+      transition: all .3s;
+}
+
+.scale:hover {
+      scale: 1.2;
+}
+
+.hidden {
+      display: none;
+}
