@@ -26,9 +26,6 @@ footer, header, hgroup, menu, nav, section {
 body {
       line-height: 1;
 }
-/*ol, ul {
-      list-style: none;
-}*/
 blockquote, q {
       quotes: none;
 }
@@ -41,9 +38,6 @@ table {
       border-collapse: collapse;
       border-spacing: 0;
 }
-
-
-
 .fon {
       background-color: #FEF5E7;
       width: 100%;
@@ -51,13 +45,8 @@ table {
 .fon_cont{
       max-width: 1310px;
       padding: 0px 15px;
-
       margin: 0 auto; 
 }
-
-
-
-
 .card_flex {
       display: flex;
       flex-wrap: wrap;
@@ -128,11 +117,10 @@ table {
       display: inline-block;
       font-size: 17px;
       padding: 10px 35px;
-      border-radius: 10px; /* Закругление углов */
+      border-radius: 10px;
       position: relative;
       top: 45px;
 }
-
 .popup {
       position: fixed;
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
@@ -155,26 +143,22 @@ table {
       margin-bottom: 5px;
       margin-top: 0;
 }
-
 .popup-close-img {
       width: 25px;
       height: 25px;
 }
-
 .popup-title {
       margin-bottom: 25px;
       line-height: normal;
       font-size: 24px;
       text-align: center;
 }
-
 .inputs {
       display: flex;
       flex-wrap: wrap;
       gap: 0 20px;
       margin-bottom: 40px;
 }
-
 .popup-input-name,
 .popup-input-phone,
 .popup-input-email {
@@ -194,7 +178,6 @@ button {
       cursor: pointer;
       border: none;
 }
-
 input {
       font-family: Montserrat Alternates, sans-serif;
       color: #000;
@@ -205,12 +188,10 @@ input {
       outline: none;
       padding: 10px;
 }
-
 input::placeholder {
       font-family: Montserrat Alternates, sans-serif;
       color: #000;
 }
-
 .active {
       visibility: visible;
 }
